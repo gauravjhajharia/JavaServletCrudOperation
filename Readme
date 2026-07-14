@@ -1,0 +1,90 @@
+# Java Servlet CRUD Application
+
+## Overview
+
+This project is a **Java Servlet-based CRUD (Create, Read, Update, Delete) application** developed using Java Servlets and Apache Tomcat. It demonstrates how to build a REST-style web application without using Spring Boot, following a layered architecture.
+
+The application allows users to perform basic CRUD operations on user data through HTTP requests.
+
+## Features
+
+* Create a new user
+* Retrieve all users
+* Retrieve a user by ID
+* Update existing user details
+* Delete a user
+* Input validation for request parameters
+* JSON-based request and response handling
+* Layered architecture (Servlet → Service → Repository → Model)
+
+## Technologies Used
+
+* Java
+* Java Servlets
+* Apache Tomcat
+* Maven
+* JSON
+* HTTP Methods (GET, POST, PUT, DELETE)
+
+## Project Structure
+
+```text
+src
+├── model
+│   └── User.java
+├── repository
+│   └── UserRepository.java
+├── service
+│   └── UserService.java
+├── servlet
+│   └── UserServlet.java
+└── util
+```
+
+## CRUD Operations
+
+### Create User
+
+* **Method:** `POST`
+* **Description:** Creates a new user.
+
+### Get All Users
+
+* **Method:** `GET`
+* **Description:** Retrieves all users.
+
+### Get User by ID
+
+* **Method:** `GET`
+* **Description:** Retrieves a specific user using its ID.
+
+### Update User
+
+* **Method:** `PUT`
+* **Description:** Updates an existing user's information.
+
+### Delete User
+
+* **Method:** `DELETE`
+* **Description:** Deletes a user using its ID.
+
+## Learning Outcomes
+
+* Java Servlet lifecycle
+* Handling HTTP requests and responses
+* RESTful API development using Servlets
+* Request parameter validation
+* JSON serialization and response handling
+* Layered application architecture
+* Maven project management
+* Deploying applications on Apache Tomcat
+
+## Future Improvements
+
+* Database integration using MySQL
+* JDBC implementation
+* Authentication and Authorization
+* Exception handling
+* Logging
+* Unit testing
+* Pagination and filtering
